@@ -14,14 +14,11 @@ melody = {
     \numericTimeSignature
     \key ef \major
     \tempo 4 = 150
-    \sectionLabel \markup \box "Intro"
     \sectionBox "Intro"
     \partial 4 ef4 | bf' ef, bf'8 ef,4 a8~ | a8 bf4. af8 bf g4 | r8 g ef4 g8 ef f g~ | g2 \breathe bf4 a \section \break
+    \sectionBox "A"
     \grace s
     \repeat volta 2 {
-      \sectionBox "A"
-          \sectionLabel \markup \box "Intro"
-
       af,1~ | af8 bf4 c8 d c bf4 | g1~ | g8 bf4 c8 d c bf4 | \break
       af1~ | af8 bf c d g d4 c8~ | c1~ | c4 r bf a | \section \break
       af!1~ | af8 bf4 c8 d c bf4 | g1~ | g8 bf4 c8 d c bf4 | \break
@@ -71,5 +68,10 @@ harmony =
   ef1:6 | f2:m7 bf:7 | ef1:6 | f2:m7 bf:7 |
   f2:m7 bf:7 | f1:m9 | e:9 | ef1*2:6
 }
+
+lyrics_text = \lyricmode {
+    a2 b c
+  }
+
 
 \include "../../../templates/lead_sheet.ly"

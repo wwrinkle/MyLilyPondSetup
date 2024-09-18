@@ -36,10 +36,10 @@ melody = {
     }
     \sectionBox "Coda"
     \repeat volta 2 {
-      ef'1~^"Vamp" | ef4 <bf bf'>8-"c'est bon" <d d'>~ <d d'>4 <bf bf'>8-"c'est bon" <c c'> | r1 |
+      ef'1~^"Vamp" | ef4 <bf bf'>8 <d d'>~ <d d'>4 <bf bf'>8 <c c'> | r1 |
       \alternative {
         \volta 1 {
-          r4 <bf bf'>8-"c'est bon" <d d'>~ <d d'>4 <bf bf'>8-"c'est bon" <c c'> \break
+          r4 <bf bf'>8 <d d'>~ <d d'>4 <bf bf'>8 <c c'> \break
         }
         \volta 2 {
           \override Score.VoltaBracket.font-family = #'lv-goldenage
@@ -67,6 +67,13 @@ harmony =
   b:7 | bf:7 | ef1*2 ||
   ef1:6 | f2:m7 bf:7 | ef1:6 | f2:m7 bf:7 |
   f2:m7 bf:7 | f1:m9 | e:9 | ef1*2:6
+}
+
+melody_lyrics = \lyricmode {
+  % lyrics are attached to melody notes
+  % these start on the 123rd note
+  % if the melody is ever adjusted the lyrics placement may change
+  \repeat unfold 123 _ c'est bon c'est bon c'est bon c'est bon
 }
 
 \include "../../../templates/lead_sheet.ly"
