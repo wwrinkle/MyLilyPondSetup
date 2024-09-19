@@ -3,6 +3,11 @@
 
 \include "./modules/index.ly"
 
+#(begin (
+  (display "melody class")
+          (display (class-of melody))
+          ))
+
 \score {
   \new StaffGroup <<
     \leadSheetChords \harmony

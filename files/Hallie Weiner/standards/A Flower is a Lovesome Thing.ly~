@@ -67,10 +67,9 @@ aSectionHarmony = \chordmode {
 }
 
 harmony = \chordmode {
-  % bar 18 has a d maj7 / a preceded by a d maj.
-  % Normally this would just display the bass (/A)
+  % bar 18 has a d maj7 / a preceded by a d maj. 
+  % Normally this would just display the bass (/A) 
   % but the second chord is on a new line
-  % chordChanges = ##f turns off the custom engraver
   \set chordChanges = ##f
   b1*4:7.11+ |
   \aSectionHarmony | df1:6 |

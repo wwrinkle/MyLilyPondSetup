@@ -18,6 +18,7 @@ melody = {
     \repeat volta 2 {
       af1 | f'4 ef2 f4 | g,1 | g'4 f2 g4 | \break
       c,1 | bf'4 af2 c,4 | ef1 | c'4 bf2 ef,4 \section \break
+      
       \alternative {
         \volta 1 {
           \sectionBox "B"
@@ -25,7 +26,6 @@ melody = {
           f e f g | \tuplet 3/2 { f4 e ef } d4 df | c2 c2~ | c4 r2 c4 | \break
         }
         \volta 2 {
-          \sectionBox "C"
           af'4 g af bf | \tuplet 3/2 { c4 bf af } g4 gf | f1 | \tuplet 3/2 { af4 gf gf} f4 e | \break
         }
       }
