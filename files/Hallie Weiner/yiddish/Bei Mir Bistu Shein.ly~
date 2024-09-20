@@ -51,8 +51,7 @@ melody = \relative c' {
     bf2 f4 bf~ | bf af g f | af2 af4 af8 af~ | af4 f g af | \break
     bf2 f4 bf~ | bf af g f | c'2 c4 c8 c~ | c2 r4 c, \section \break
     \sectionBox "A"
-    af'2 g8 f r af~ | af2 r4 c, | af'2 g8 f r af~ | af2 r4 af | \break
-    g2 e4 c | g' g af g | f1 | r1 |
+    af'2 g8 f r af~ | af2 r4 c, | af'2 g8 f r af~ | af2 r4 af | \ 
   }
 }
 
