@@ -15,14 +15,14 @@ melody = {
     \key ef \major
     \tempo 4 = 150
     \sectionBox "Intro"
-    \partial 4 ef4 | bf' ef, bf'8 ef,4 a8~ | a8 bf4. af8 bf g4 | r8 g ef4 g8 ef f g~ | g2 \breathe bf4 a \section \break
+    \partial 4 ef4 | bf' ef, bf'8 ef,4 a8~ | a8 bf4. af8 bf g4 | r8 g ef4 g8 ef f g~ | g2 bf4 a \section \break
     \sectionBox "A"
     \grace s
     \repeat volta 2 {
       af,1~ | af8 bf4 c8 d c bf4 | g1~ | g8 bf4 c8 d c bf4 | \break
       af1~ | af8 bf c d g d4 c8~ | c1~ | c4 r bf a | \section \break
       af!1~ | af8 bf4 c8 d c bf4 | g1~ | g8 bf4 c8 d c bf4 | \break
-      af1~ | af8 bf c d g bf,4 ef8~ | ef1~ | ef4 r ds e | \section \break
+      af1~ | af4 c8 d g bf,4 ef8~ | ef1~ | ef4 r ds e | \section \break
       \sectionBox "B"
       fs2 ds4 cs | b2 as4 gs | gs2 as2~ | as4 r ds e | \break
       f!2 ef4 d | c2 d4 ef | g1 | f4 r bf, a | \section \break
@@ -36,19 +36,8 @@ melody = {
     }
     \sectionBox "Coda"
     \repeat volta 2 {
-      ef'1~^"Vamp" | ef4 <bf bf'>8 <d d'>~ <d d'>4 <bf bf'>8 <c c'> | r1 |
-      \alternative {
-        \volta 1 {
-          r4 <bf bf'>8 <d d'>~ <d d'>4 <bf bf'>8 <c c'> \break
-        }
-        \volta 2 {
-          \override Score.VoltaBracket.font-family = #'lv-goldenage
-          \override Score.VoltaBracket.text = \markup \text \large "Last X"
-          r8 bf4 c8~ c ef4 g8~ |
-        }
-      }
+      ef'1~^"Vamp and fade" | ef4 <bf bf'>8^"Whole band sings" <d d'>~ <d d'>4 <bf bf'>8 <c c'> | r1 | r4 <bf bf'>8 <d d'>~ <d d'>4 <bf bf'>8 <c c'> \break
     }
-    g1 | fs | bf1~ | bf4 r4 r2 | \bar "."
   }
 }
 
@@ -66,14 +55,24 @@ harmony =
   f:m7 | af:m6 | ef:maj7 | c:m7 |
   b:7 | bf:7 | ef1*2 ||
   ef1:6 | f2:m7 bf:7 | ef1:6 | f2:m7 bf:7 |
-  f2:m7 bf:7 | f1:m9 | e:9 | ef1*2:6
 }
 
 melody_lyrics = \lyricmode {
-  % lyrics are attached to melody notes
-  % these start on the 123rd note
-  % if the melody is ever adjusted the lyrics placement may change
-  \repeat unfold 123 _ c'est bon c'est bon c'est bon c'est bon
+  % empty intro lyrics
+  \repeat unfold 16 _
+  C'est si bon De par -- tir n'im -- porte où Bras des -- sus, bras des -- sous
+  En chan -- tant des chan -- sons.
+  C'est si bon
+  De se dire des mots doux
+  Des pe -- tits rien du tout
+  Mais qui en disent long. En voy --
+  ant no -- tre mi -- ne ra -- vi -- e Les pas
+  sants, dans la rue, nous en vient. _ C'est si
+  bon De guet -- ter dans ses yeux un es -- poir mer -- veil --
+  leux Qui don ne fe fris -- son. C'est si
+  bon Ces pet -- it's sen -- sa -- tions, Ça vaut mieux qu'un mil --
+  lion. Tell -- 'ment tell -- 'ment c'est bon. C'est si
+  Bon. C'est bon, c'est bon. C'est bon, c'est bon.
 }
 
 \include "../../../templates/lead_sheet.ly"
