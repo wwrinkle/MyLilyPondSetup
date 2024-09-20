@@ -82,10 +82,9 @@ melody_lyrics_line_two = \lyricmode {
   \repeat unfold 17 _
   shuch, a zok, a kleyd on la -- tes, in ke -- she -- ne a dray, fir zlo -- tes.
   \abi_gezunt_tag_line \repeat unfold 2 _ zayne. Di luft iz
-  fray far _ ye -- dn_ glaych. Di zun zi
-  shoynt far ye -- dn ey -- nem. O -- rem od -- er raych. A
-  bi -- sl freyd, a bi -- sl la -- chn, a mol mit raynt a shnap -- sl ma -- chn.
-  \abi_gezunt_tag_line zayne.
+  fray far _ ye -- dn_ glaych. A 
+  bi -- sl freyd, a bi -- sl la -- chn, a mol mit raynt a shnap -- sl ma -- chn. 
+  \a
 }
 
 

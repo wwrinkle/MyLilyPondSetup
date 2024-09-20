@@ -45,7 +45,7 @@ melody_lyrics = \lyricmode {
 }
 
 empty_besame_line = \lyricmode {
-  \repeat unfold 8 _
+   \repeat unfold 8 _
 }
 
 a_section_line_one = \lyricmode {
@@ -63,7 +63,7 @@ melody_lyrics_line_two = \lyricmode {
   Quie -- ro te -- ner -- te muy cer -- ca mi -- rar -- me en tus o -- jos ver -- te junto_a mi.
   Pien -- sa que tal vez ma -- ña -- na yo ya est -- ar -- é le -- jos, muy le-jos de ti.
   \besame_line
-  \a_section_line_one
+\a_section_line_one
   \empty_besame_line
   \a_section_line_two
 
