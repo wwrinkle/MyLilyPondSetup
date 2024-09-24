@@ -36,7 +36,28 @@ melody = {
     ef8 d c bf
     \time 4/4
     \numericTimeSignature
-    c1 \section \break
+    % <<
+    %   { \voiceOne c1 }
+    %   % \new Voice {
+    %   %   s
+    %   %   % \voiceTwo r16 g''8 g16~ g4 r16 g8 g16~ g4
+    %   % }
+    %   \\
+    %   { s }
+
+    % >> |
+    <<
+      {
+        c1
+      }
+      {
+       
+       \improvisationOn \stemUp r16 g''8 g16~ g4 r16 g8 g16~ g4
+      }
+    >>
+
+
+    \section \break
     \sectionBox "C"
     \a_section ef8 d c bf c2 \section \break
     \sectionBox "Solos"
@@ -45,7 +66,7 @@ melody = {
       \slashNotation 16 \break
     }
     \sectionBox "D"
-    \a_section 
+    \a_section
     ef8 d c bf a2 | d8 c bf a bf4 bf |bf1 \fermata \bar "."
   }
 }

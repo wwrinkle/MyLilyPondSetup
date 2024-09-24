@@ -4,7 +4,7 @@
 \include "../../../templates/init.ly"
 
 title = "Chanson de Delphine"
-sub_title = "You Must Believe in Spring"
+sub_title = "(You Must Believe in Spring)"
 composer = "Legrand"
 style = "Ballad"
 part_name = "C Part"
@@ -23,9 +23,10 @@ melody = {
     \numericTimeSignature
     \key g \minor
     \textMark "Open Cadenza"
-    \slashNotation 2 \improvisationOn b2 \fermata \improvisationOff \section \break
+    \slashNotation 2 \improvisationOn b'2 \fermata \improvisationOff \section \break
     \sectionBox "A"
-    \a_section ef8 d c bf c2 \section \break
+    \tempo \markup "Ballad Time"
+    \a_section ef,8 d c bf c2 \section \break
     \key fs \minor
     \sectionBox "B"
     r8 b cs d fs, d' es, cs' | b a b gs a2 | r8 d e fs a, fs' gs, e' | \break
@@ -36,15 +37,26 @@ melody = {
     ef8 d c bf
     \time 4/4
     \numericTimeSignature
-    c1 \section \break
+    \textMark "Setup Double Time"
+    <<
+      {
+        c1
+      }
+      \new Voice {
+        \improvisationOn \stemUp r16 g''8 g16~ g4 r16 g8 g16~ g4 \improvisationOff
+      }
+    >>
+    \section \break
     \sectionBox "C"
-    \a_section ef8 d c bf c2 \section \break
+    \tempo \markup "Double Time Feel"
+    \a_section ef,8 d c bf c2 \section \break
     \sectionBox "Solos"
     \repeat volta 2 {
       \slashNotation 16 \break
-      \slashNotation 16 \break
+      \slashNotation 15 \textMark "Rit. Last X" \slashNotation 1 \break
     }
     \sectionBox "D"
+    \tempo \markup "Ballad Time"
     \a_section
     ef8 d c bf a2 | d8 c bf a bf4 bf |bf1 \fermata \bar "."
   }
@@ -91,6 +103,5 @@ harmony = \chordmode {
   \a_section_harmony | bf2:maj7 <ef g bf d' f a> |
   a:m7.5- ef4:13.11+ d:7.9- | g1:m7
 }
-
 
 \include "../../../templates/lead_sheet.ly"
