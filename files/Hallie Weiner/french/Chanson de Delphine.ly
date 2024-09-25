@@ -23,7 +23,7 @@ melody = {
     \numericTimeSignature
     \key g \minor
     \textMark "Open Cadenza"
-    \slashNotation 2 \improvisationOn b'2 \fermata \improvisationOff \section \break
+    \slashNotation 2 \improvisationOnStemDown b'2 \fermata \improvisationOffStemDown \section \break
     \sectionBox "A"
     \tempo \markup "Ballad Time"
     \a_section ef,8 d c bf c2 \section \break
@@ -43,7 +43,7 @@ melody = {
         c1
       }
       \new Voice {
-        \improvisationOn \stemUp r16 g''8 g16~ g4 r16 g8 g16~ g4 \improvisationOff
+        \improvisationOnStemUp r16 g''8 g16~ g4 r16 g8 g16~ g4 \improvisationOffStemUp
       }
     >>
     \section \break
@@ -86,7 +86,7 @@ melody_lyrics = \lyricmode {
 }
 
 a_section_harmony = \chordmode {
-  a2:m7.5-  <d, g, c ef>4 d:7.9- | d2:7.9-/g g:m | c:m7 f:7 | f:7.9-/bf bf:maj7 |
+  a2:m7.5-  <d, g c ef>4 d:7.9- | d2:7.9-/g g:m | c:m7 f:7 | f:7.9-/bf bf:maj7 |
   e:m7.5- <a, d g bf>4 a:7.9- | d2:m7.5- <g, c f af>4 g:7.9- | c2:m7 f4:sus9 f:7 |
 }
 
@@ -100,8 +100,9 @@ harmony = \chordmode {
   c2:m7 f4:sus9 f:7 | bf2:maj7 | a:m7.5- d:7 |
   \a_section_harmony | bf2:maj7 a4:m7.5- d:7 |
   \a_section_harmony | bf2:maj7 a4:m7.5- d:7 |
-  \a_section_harmony | bf2:maj7 <ef g bf d' f a> |
-  a:m7.5- ef4:13.11+ d:7.9- | g1:m7
+  \a_section_harmony | bf2:maj7 ef:maj7.11+ |
+  % <ef g bf d' f a>
+  a:m7.5- ef4:maj7.11+ d:7.9- | g1:m7
 }
 
 \include "../../../templates/lead_sheet.ly"
