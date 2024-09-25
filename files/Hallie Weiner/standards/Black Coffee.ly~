@@ -1,0 +1,81 @@
+\version "2.24.4"
+\language "english"
+
+\include "../../../templates/init.ly"
+
+title = "Black Coffee"
+composer = "Webster/Burke"
+part_name = "C Part"
+
+a_section_line_one = \relative c' {
+  c'8 c c g bf g4. | c8 c c g bf g4. | \break
+  c8 c c g bf bf bf g | c8 c c g bf4 c8 c |
+}
+
+melody = {
+  \relative c' {
+    \time 4/4
+    \numericTimeSignature
+    \key c \major
+    \partial 8 g'8 |
+    \repeat volta 2 {
+      \sectionBox "A"
+      \a_section_line_one \break
+      ef'8 a,~ a2. | \tuplet 3/2 { r4 g' f } \tuplet 3/2 { ef4 c a } | g1~ | g2. r8 g | \break
+      d' e f g \acciaccatura ds e c4. | r4 a8 ef' d4 c8 c~ | c1~ |
+      \alternative {
+        \volta 1 {
+          c2. r8 g |
+        }
+        \volta 2 {
+          c2 r4 c8 c \section
+        }
+      }
+    } \break
+    \sectionBox "B"
+    f g f ef f4. g8 | ef c4.~ c c8 | f g f g af4 bf | g2~ g4. g8 | \break
+    af af af af af4. cf8 | af af~ af2~ af8 f | af af af af af,4. af'8 | \tuplet 3/2 { g8 g g } g8 g g,4. g8 \section \break
+    \sectionBox "A"
+    \a_section_line_one \break
+    ef'8 a,~ a2. | \tuplet 3/2 { r4 g' f } \tuplet 3/2 { ef4 c a } | g1 | r8 a \tuplet 3/2 { c8 e g } bf8 bf4 a8 | \break
+    f e f g \acciaccatura ds e c4. | r8 a c ef d4 c8 c~ | c1~ | c2. r4 \bar "."
+  }
+}
+
+harmony =
+\chordmode {
+  s8 | \repeat unfold 3 { c2:7.9+ df:7.9+ } | c:7.9+ gf:13 |
+  f1*2:7 || c2:7.9+ df:7.9+ | c2:7.9+ a:7.9+ |
+  d1:m7 | g:sus9 | \repeat unfold 2 { c2:7.9+ df:7.9+ } | c:7.9+ gf:9.11+ |
+  f:m7 bf:9 | c1:m7 | d2:m7.5- g:7.9-.5+ | c1:maj7 |
+  ef2:m7 af:7 | df:maj7 bf:m7 | ef:m7 af:7 | d:m7 g:7 |
+  \repeat unfold 3 { c2:7.9+ df:7.9+ } | c:7.9+ gf:13 |
+  f1*2:7 || c2:maj7 d:m7 | e:m7 a:7.5+.9+ |
+  d1:m7 | g:sus9 | \repeat unfold 2 { c2:7.9+ df:7.9+ }
+}
+
+melody_lyrics = \lyricmode {
+  I'm fee -- l'in migh -- ty lone -- some I have -- n't slept a wink
+  I walk the foor from nine to four and in be -- tween I drink Black
+  cof -- fee Love's a hand -- me -- down brew I'll
+  ne -- ver know a Sun -- day In this week -- day room I'm _ Now a
+  man was born to be a lov -- in' A wom -- an's born to weep and fret, to
+  stay at home and tend her ov -- en, and drown her past re -- grets in cof -- fee and cig -- a -- rettes. I'm
+  moon -- in' all the morn -- in', Moan -- in' -- _ -- all the night
+  And in be -- tween it's nic -- o -- tine And not much heart to fight Black
+  cof -- fee, Feel -- in' low as the ground It's driv -- in' me cra -- zy This 
+  think -- in' 'bout my ba -- by
+
+
+}
+
+melody_lyrics_line_two = \lyricmode {
+  _
+  tal -- kin to the sha -- dow One -- _ o' -- clock till four
+  And Lord, how slow the mo -- ments go and all I do is pour Black
+  cof -- fee Since the blues caught my eye I'm
+  hang -- in' out on Mon -- day My Sun -- day_dreams to dry
+}
+
+
+\include "../../../templates/lead_sheet.ly"
