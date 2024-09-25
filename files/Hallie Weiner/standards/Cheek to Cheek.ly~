@@ -22,31 +22,38 @@ melody = {
     \numericTimeSignature
     \key af \major
     \repeat volta 2 {
-      \a_section
-      \alternative {
-        \volta 1 {
-          ef1~ | ef |
-        }
-        \volta 2 {
-          af,1~ | af2 r8 ef'4 d8 \section \break
+      \repeat volta 2 {
+        \bar ".|:"
+        \sectionBox "A"
+        \a_section
+        \alternative {
+          \volta 1 {
+            ef1~ | ef |
+          }
+          \volta 2 {
+            af,1~ | af2 r8 ef'4 d8 \section \break
+          }
         }
       }
+      \sectionBox "B"
+      \repeat volta 2 {
+        df!4 ef g bf | af af r8 ef4 d8 | df!4 ef g bf | af2 r8 ef4 d8 | \break
+        df!4 ef g bf | af af ef4. e8 | f4 f d bf |
+        \alternative {
+          \volta 1 {
+            af2 r8 ef'!4 d8 |
+          }
+          \volta 2 {
+            af2. r4 \section
+          }
+        }
+      } \break
+      \sectionBox "C"
+      af'4 af af2~ | af \tuplet 3/2 { af4 af af } | b4. d,8 d4 d~ | d2 b' | \break
+      bf!4. df,8 df4 df~ | df2 bf' | af4. c,8 c4 c~ | c2 bf \section \break
+      \sectionBox "A"
+      \a_section af1~ | af
     }
-    \repeat volta 2 {
-      df!4 ef g bf | af af r8 ef4 d8 | df!4 ef g bf | af2 r8 ef4 d8 | \break
-      df!4 ef g bf | af af ef4. e8 | f4 f d bf |
-      \alternative {
-        \volta 1 {
-          af2 r8 ef'!4 d8 |
-        }
-        \volta 2 {
-          af2. r4 \section
-        }
-      }
-    } \break
-    af'4. af8 af2 | af \tuplet 3/2 { af4 af af } | b4. d,8 d4 d~ | d2 b' | \break
-    bf!4. df,8 df4 df~ | df2 bf' | af4. c,8 c4 c~ | c2 bf \section \break
-    \a_section af1~ | af \bar "."
   }
 }
 
@@ -74,15 +81,34 @@ harmony =
   ef:7 bf:m7 | c:m7 df:7 | gf1:7.11+ | f:7 |
   bf:m7 | ef:7 | af:6.9 |
 
-   (bf2:m7 ef:7) |
+  \startParenthesis bf2:m7 \endParenthesis ef:7 |
 }
 
 
 melody_lyrics = \lyricmode {
-  foo
+  Hea -- ven, I'm in hea -- ven, And my
+  heart beats so that I can hard -- ly speak, And I
+  seem to find the hap -- pi -- ness I seek When we're
+  out to -- ge -- ther dan -- cing cheek to cheek cheek Oh I
+  love to climb a moun -- tain, And to reach the high -- est peak, But it
+  does -- n't thrill me half as much as dan -- cing cheek to cheek, Oh I cheek
+  Dance with me I want my arms a -- bout you, That
+  charm a -- bout you Will car -- ry me through to
+  Hea -- ven, I'm in hea -- ven And my
+  heart beats so that I can har -- dly speak And I
+  seem to find the hap -- pi -- ness I seek When we're  
+  out to -- ge -- ther dan -- cing cheek to cheek
 }
 melody_lyrics_line_two = \lyricmode {
-  bar
+  % empty spaces because verses match here
+  \repeat unfold 6 _ And the
+  cares that hung a -- round me through the week Seem to
+  va -- nish like a gam -- bler's lu -- cky streak'
+  % empty spaces because verses match here
+  \repeat unfold 14 _
+  love to go out fish -- ing In a
+  ri -- ver or a creek, But I
+  don't en -- joy it half as much as dan -- cing cheek to
 }
 
 \include "../../../templates/lead_sheet.ly"
