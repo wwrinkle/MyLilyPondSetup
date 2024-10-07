@@ -23,7 +23,7 @@ melody = {
     g4. g8~ g4. af8~ | af2. r8 af | g ef c bf af4 g'8 f~ | f2. r4 \section \break
     \sectionBox "A"
     a, bf8 d~ d4. g8 | g4 f8 g~ g4. f8 | d4 d8 c'~ c4. g8 | bf4 gf8 af~ af4. ef8 | \break
-    g4 d8 f c ef4.~ | ef2 f4 c | ef1 | r1 \bar "."
+    g4 d8 f c ef4.~ | ef2 f4 c | ef1 | r1 \fine
   }
 }
 

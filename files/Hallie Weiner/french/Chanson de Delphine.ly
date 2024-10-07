@@ -11,8 +11,8 @@ part_name = "C Part"
 
 a_section = {
   \relative c' {
-    r8 c d ef g, ef' fs, d' | c bf c a bf2 | r8 ef f g bf, g' a, f' | \break
-    ef d ef c d2 | r8 g a bf d, e cs4 | r8 f g af c, d b4 | \break
+    r8 c d ef g, ef' fs, d' | c bf c a bf2 | r8 ef f g bf, g' a, f' |
+    ef d ef c d2 | r8 g a bf d, e cs4 | r8 f g af c, d b4 |
     r8 ef f g bf, g' a, f' |
   }
 }
@@ -23,9 +23,9 @@ melody = {
     \numericTimeSignature
     \key g \minor
     \textMark "Open Cadenza"
-    \slashNotation 2 \improvisationOnStemDown b'2 \fermata \improvisationOffStemDown \section \break
+    \slashNotation 2 \improvisationOnStemDown b'2 \fermata \improvisationOffStemDown \section
+    \tempo "Ballad Time"
     \sectionBox "A"
-    \tempo \markup "Ballad Time"
     \a_section ef,8 d c bf c2 \section \break
     \key fs \minor
     \sectionBox "B"
@@ -58,7 +58,7 @@ melody = {
     \sectionBox "D"
     \tempo \markup "Ballad Time"
     \a_section
-    ef8 d c bf a2 | d8 c bf a bf4 bf |bf1 \fermata \bar "."
+    ef8 d c bf a2 | d8 c bf a bf4 bf |bf1 \fermata \fine
   }
 }
 
@@ -70,7 +70,7 @@ melody_lyrics = \lyricmode {
   Son re -grad et l'a -- mour ne font plus qu'une im -- age
   Il a cette bea -- u -- té des hommes -- _ ro -- man -- tiques
   Du di -- vin Ra -- pha -- ël le tal -- ent im -- i -- té
-  Un -- e phi -- lo -- so -- phie d'esprit dé -- mo -- cra -- _ -- tique
+  Un -- e phi -- lo -- so -- phie d'esprit dé -- mo -- cra -- tique
   Et du po -- ète en -- fin la rime il -- lim -- it -- ée
   Je pour -- rais te par -- ler de ses yeux, de ses mains
   Je pour -- rais te par -- ler de lui jusqu' -- à de -- main

@@ -20,7 +20,7 @@ melody = {
     e2 d4 d~ | d ef, e d' | cs1~ | cs \section \break
     df1 | gf2. df4 | c c c c | c f2 c4 | \break
     bf1 | af'2 gf | af,4 af \tuplet 3/2 { af4 af af } | c2. bf4 | \break
-    gf bf df gf | bf2 c | df1~ | df \bar "."
+    gf bf df gf | bf2 c | df1~ | df \fine
   }
 }
 

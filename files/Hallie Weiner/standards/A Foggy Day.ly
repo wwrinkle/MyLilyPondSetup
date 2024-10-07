@@ -26,7 +26,7 @@ melody = {
     r2 ef4 ef | c2. c4 | bf2 bf | g g4 af | \break
     \startPedalSpan \markup { B\flat pedal }
     bf ef, f af | g ef f af | g2 c | ef, f \stopTextSpan | \break
-    ef1~ | ef2 r \bar "."
+    ef1~ | ef2 r \fine
   }
 }
 

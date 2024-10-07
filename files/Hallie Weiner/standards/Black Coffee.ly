@@ -39,7 +39,7 @@ melody = {
     \sectionBox "A"
     \a_section_line_one \break
     ef'8 a,~ a2. | \tuplet 3/2 { r4 g' f } \tuplet 3/2 { ef4 c a } | g1 | r8 a \tuplet 3/2 { c8 e g } bf8 bf4 a8 | \break
-    f e f g \acciaccatura ds e c4. | r8 a c ef d4 c8 c~ | c1~ | c2. r4 \bar "."
+    f e f g \acciaccatura ds e c4. | r8 a c ef d4 c8 c~ | c1~ | c2. r4 \fine
   }
 }
 
